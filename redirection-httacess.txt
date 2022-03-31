@@ -1,0 +1,11 @@
+<VirtualHost *:80>
+    ServerAdmin webmaster@testautohb.com
+    ServerName testautohb.com
+    ServerAlias www.testautohb.com
+    WSGIScriptAlias / var/www/testautohb.com/index.wsgi
+
+    Alias /static/ /var/www/testautohb.com/static/
+    <Location "/static/">
+        Options -Indexes
+    </Location >
+</VirtualHost >
